@@ -21,6 +21,7 @@ body{
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
 }
+/* header */
 .main-header{
     width: 100%;
     height: 80px;
@@ -37,10 +38,17 @@ body{
     max-width: calc(100% - 100px);
     width: 100%;
 }
+/* logo */
 .logo img{
     width: 160px;
     margin-bottom: 13px;
 }
+/* menu icon */
+.menu-icon{
+    font-size: 21px;
+    display: block;
+}
+/* navbar */
 .navbar .list-items{
     display: flex;
     flex-direction: column;
@@ -60,7 +68,7 @@ body{
 .navbar .list-items li a{
     color: var(--cl-eerie-black);
     font-weight: var(--fw-light);
-    position: relative;
+    position: relative; 
 }
 .navbar .list-items li a::before{
     content: "";
@@ -77,14 +85,92 @@ body{
     transform: scaleX(1);
     transform-origin: left;
 }
-.search-container #search-bar input{
-    border-radius: 5px;
+/* search */
+.icon{
+    font-size: 21px;
+}
+ .search-bar-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--cl-Turquise-green);
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    padding: 8px;
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+}
+.search-bar-container.active{
+    /* clip-path: polygon(0 0,100% 0,100% 100%,0 100%);  */
+}
+#search-bar{
+    width: 100%;
+    padding: 1rem;
     outline: none;
     border: none;
+}
+.search-bar-container .label-icon{
+    cursor: pointer;
+    /* border: solid red 2px; */
+    font-size: 21px;
+    margin: 16px
+}
+.search-bar-container .label-icon:hover{
+    color: #F6FAF5;
+} 
+.search-bar{
+    /* width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    background-color: var(--cl-Turquise-green); */
+    /* border-radius: 5px;
     padding: 5px 10px;
-    margin: 8px;
+    /* margin: 8px; */
+    /* border: solid red 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%; */ 
 }
 
+
+/* hero banner */
+.hero-banner{
+    width: 100%;
+    height: 900px;
+    background: url(/img/hero-banner-img.jpg) no-repeat bottom / cover;
+    /* position: absolute; */
+    display: flex;
+    align-items: flex-end;
+    object-fit: cover;
+    
+}
+.banner-container{
+    /* max-width: 60%; */
+    width: 380px;
+    height: 200px;
+    background-color: #345b1aba;
+    padding: 20px;
+    border-top-right-radius:100px ;
+}
+.banner-container h1{
+    padding: 16px;
+    color: #F6FAF5;
+
+}
+.banner-container p{
+    padding: 16px;
+    color: #F6FAF5;
+}
+
+
+
+
+/* ipad */
 @media  screen and (min-width: 767px) {
     .navbar .list-items{
         display: flex;
@@ -97,5 +183,18 @@ body{
     }
     .navbar .list-items li{
         margin: 0;
+        padding: 0 24px;    
+    }
+    .menu-icon{ 
+        display: none;
+    }
+}
+/* desktop */
+@media screen and (min-width:1080px) {
+    .navbar .list-items li{
+        padding: 0 60px;
+    }
+    .menu-icon{ 
+        display: none;
     }
 }
