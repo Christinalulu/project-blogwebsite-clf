@@ -188,7 +188,9 @@ body{
 
 
 /* carousel */
-
+.carousel__image {
+    width: 200px;
+}
 
 
 
