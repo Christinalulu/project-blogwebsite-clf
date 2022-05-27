@@ -40,6 +40,8 @@ body{
     justify-content: space-around;
     position: fixed; */
     background-color: var(--cl-Turquise-green);
+    position: fixed;
+  
 }
 
 .inner-header{
@@ -47,7 +49,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+    padding: 8px;
+    height: 60px;
 
     /* display: flex;
     align-items: center;
@@ -59,6 +62,7 @@ body{
 .logo img{
     width: 160px;
     margin-bottom: 13px;
+    margin-left: 26px;
 }
 /* menu icon */
 .menu-icon{
@@ -71,12 +75,14 @@ body{
     flex-direction: column;
     position: absolute;
     align-items: center;
+    background-color: var(--cl-Turquise-green);
     top: 100%;
     left: 0;
-    background-color: var(--cl-Turquise-green);
-    width: 30%;
+    width: 43%;
     border-bottom-right-radius: 100px;
-    display: none;
+    display: block;
+    padding: 16px;
+    height: 332px;
     
 }
 .navbar .list-items li{
@@ -107,6 +113,7 @@ body{
 /* search */
 .icon{
     font-size: 21px;
+    padding: 8px;
 }
  .search-bar-container{
     position: absolute;
@@ -160,12 +167,12 @@ body{
 /* hero banner */
 .hero-banner{
     width: 100%;
-    height: 900px;
+    height: 800px;
     background: url(/img/hero-banner-img.jpg) no-repeat bottom / cover;
     /* position: absolute; */
     display: flex;
     align-items: flex-end;
-    object-fit: cover;
+    object-fit: contain;
     
 }
 .banner-container{
@@ -191,8 +198,17 @@ body{
 .carousel__image {
     width: 200px;
 }
-
-
+@media  screen and (min-width: 412px){
+    .logo img{
+        margin-left: 64px;
+    }
+   
+}
+@media  screen and (min-width: 636px){
+    .logo img{
+        margin-left: 110px;
+    }
+}
 
 
 /* ipad */
@@ -203,12 +219,13 @@ body{
         position: relative;
         border-radius: 0%;
         top: 0;
-        height: 80px;
+        height: 40px;
         width: 100%;
+        margin-right: -30px;
     }
     .navbar .list-items li{
         margin: 0;
-        padding: 0 24px;    
+        padding: 0 16px;    
     }
     .menu-icon{ 
         display: none;
