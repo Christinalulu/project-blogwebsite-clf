@@ -14,113 +14,112 @@
     ></script>
   </head>
   <body>
+    <!-- Navigation and header -->
     <header class="main-header">
       <div class="inner-header">
-        <div class="menu-icon">
+        <label for="nav-toggle" class="nav-toggle-menu">
           <i class="fak fa-bars-regular"></i>
+        </label>
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="/img/assent/logo-icon/logo.png"
+            alt="home logo"
+          />
         </div>
-        <div class="logo">
-          <img src="/img/assent/logo-icon/logo.png" alt="home logo" />
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <ul class="list-container-nav">
+          <li class="item-nav"><a href="#" class="link-nav">Home</a></li>
+          <li class="item-nav"><a href="#" class="link-nav">Post list</a></li>
+          <li class="item-nav"><a href="#" class="link-nav">About me</a></li>
+          <li class="item-nav"><a href="#" class="link-nav">contact</a></li>
+        </ul>
+        <label for="search-toggle" class="search-icon">
+          <i class="fak fa-magnifying-glass-regular"></i>
+        </label>
+        <input type="checkbox" id="search-toggle" class="search-toggle" />
+        <div class="search-container">
+          <input class="search-bar" type="search" placeholder="Search here.." />
+          <i class="fak fa-magnifying-glass-regular"></i>
         </div>
-        <nav class="navbar">
-          <ul class="list-items">
-            <li><a href="#">home</a></li>
-            <li><a href="#">post lits</a></li>
-            <li><a href="#">about me</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="icon">
-          <i id="search-icon" class="fak fa-magnifying-glass-regular"></i>
-        </div>
-
-        <form action="" class="search-bar-container">
-          <input id="search-bar" type="search" placeholder="Search here..." />
-          <label for="search-bar" class="label-icon">
-            <i class="fak fa-magnifying-glass-regular"></i>
-          </label>
-        </form>
       </div>
     </header>
-
+    <!-- Hero banner -->
     <section class="hero-banner">
       <div class="banner-container">
-        <h1>Happy Camper</h1>
-        <p>
+        <h1 class="banner-heading">Happy Camper</h1>
+        <p class="banner-text">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora,
           tempore culpa. Nam magni similique pariatur inventore iste tempora ea
-          quidem dicta unde autem eaque nisi assumenda esse, asperiores eius
-          commodi?
+          quidem.
         </p>
       </div>
     </section>
-
     <div class="header-h2"><h2>Lates post</h2></div>
+    <!-- Carousel section -->
 
     <section class="carousel">
-      <button class="carousel__button carousel__button--left">
+      <button class="carousel-btn btn-left">
         <i class="fak fa-angle-left-solid"></i>
       </button>
 
-      <div class="carousel__track-container">
-        <ul class="carosuel__track">
-          <li class="carosuel__slide">
+      <ul class="carousel-slide-container">
+        <li class="carousel-item current-item">
+          <a href="#">
             <img
-              class="carousel__image"
-              src="/img/assent/summer/summer-01.jpg"
+              class="carousel-img"
+              src="/img/assent/cabin/cabin-01.jpg"
               alt=""
             />
-          </li>
-          <li class="carosuel__slide">
+          </a>
+          <div class="heading-container">
+            <h3 class="heading-text">cabin</h3>
+          </div>
+        </li>
+
+        <li class="carousel-item">
+          <a href="#">
             <img
-              class="carousel__image"
-              src="/img/assent/summer/summer-01.jpg"
+              class="carousel-img"
+              src="/img/assent/fall/fall-01.jpg"
               alt=""
             />
-          </li>
-          <li class="carosuel__slide">
+          </a>
+          <div class="heading-container">
+            <h3 class="heading-text">fall</h3>
+          </div>
+        </li>
+
+        <li class="carousel-item">
+          <a href="#">
             <img
-              class="carousel__image"
-              src="/img/assent/summer/summer-01.jpg"
+              class="carousel-img"
+              src="/img/assent/family-friends/famliy-friend-01 .jpg"
               alt=""
             />
-          </li>
-        </ul>
-      </div>
-      <button class="carousel__button carousel__button--right">
+          </a>
+          <div class="heading-container">
+            <h3 class="heading-text">family and friends</h3>
+          </div>
+        </li>
+        <li class="carousel-item">
+          <a href="#">
+            <img
+              class="carousel-img"
+              src="/img/assent/favorite/favorite-01.jpg"
+              alt=""
+            />
+          </a>
+          <div class="heading-container">
+            <h3 class="heading-text">favorite</h3>
+          </div>
+        </li>
+      </ul>
+      <button class="carousel-btn btn-right">
         <i class="fak fa-angle-right-solid"></i>
       </button>
-
-      <div class="carousel__nav">
-        <button class="carousel__indicator"></button>
-        <button class="carousel__indicator"></button>
-        <button class="carousel__indicator"></button>
-      </div>
     </section>
 
-    <div class="view-all-button"><a href="#">View all post</a></div>
-
-    <!--  Icons
-      x-mark
-      e002
-      <i class="fak fa-xmark-solid"></i>
-
-      search-icon
-      unicode:e001
-      <i class="fak fa-magnifying-glass-regular"></i>
-
-      bars-icon
-      unicode: e000
-      <i class="fak fa-bars-regular"></i>
-
-      chevrons-icon
-      unicode: e007
-      <i class="fak fa-bars-regular"></i>
-
-      comment-icon
-      unicode: e008
-      <i class="fak fa-comment-pen-regular--2-"></i>
-    -->
+    <div class="header-h2"><h2>Lates post</h2></div>
   </body>
 </html>
